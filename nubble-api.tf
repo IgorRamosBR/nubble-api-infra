@@ -20,6 +20,7 @@ EOF
 }
 
 resource "aws_ecs_task_definition" "nubble_api_task_definition" {
+  family = "nubble-api-task-definition"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu                      = 256
