@@ -12,7 +12,3 @@ terraform {
 provider "aws" {
   region = var.region
 }
-
-resource "aws_ecs_cluster" "nubble_cluster" {
-  name = "my-ecs-cluster"
-}
